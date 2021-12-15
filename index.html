@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" sizes="16x16 32x32 64x64" href="https://cdn2.iconfinder.com/data/icons/everyday-objects-line-art-1/128/hourglass-ol-2-512.png" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Momentum</title>
+</head>
+<body>
+    <form id="login-form" class="hidden">
+        <input required maxlength="15" type="text" placeholder="What is your name?" />
+        <input type="submit" value="Log In" />
+    </form>
+    <span id="greeting" class="hidden"></span>
+    <span id="electronic-watch"></span>
+    <div id="clock-box">
+        <div id="clock">
+            <div id="watch-dot"></div>
+            <div class="hand hour-hand"></div>
+            <div class="hand minute-hand"></div>
+            <div class="hand second-hand"></div>
+        </div>
+    </div>
+    <span id="dayOfWeek"></span>
+    <span id="day"></span>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+</body>
+</html>
