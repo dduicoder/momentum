@@ -1,30 +1,27 @@
 // https://hwajiin.github.io/todolist_localstorage/
 
+const loginDiv = document.querySelector("#login-div");
 const loginForm = document.querySelector("#login-form");
-const loginInput = document.querySelector("#login-form input");
+const loginInput = document.querySelector("#login-form input:nth-child(2)");
 const greeting = document.querySelector("#greeting");
-
-const HIDDEN_CLASSNAME = "hidden";
-const USERNAME_KEY = "username";
-
-function paintGreeting(username) {
-    greeting.innerText = `Hello ${username}`;
-    greeting.classList.remove(HIDDEN_CLASSNAME);
-}
+const blur = document.querySelector(".blur");
 
 function loginSubmit(event) {
     event.preventDefault();
-    loginForm.classList.add(HIDDEN_CLASSNAME);
     const username = loginInput.value;
-    localStorage.setItem(USERNAME_KEY, username);
-    paintGreeting(username);
+    localStorage.setItem("username", username);
+    greeting.innerText = `Hello ${username}`;
+    blur.classList.remove("blur");
+    blur.classList.add("blur-off");
+    loginForm.classList.add("disappear");
 }
 
-const savedUserName = localStorage.getItem(USERNAME_KEY);
+const savedUserName = localStorage.getItem("username");
 
 if(savedUserName === null) {
-    loginForm.classList.remove(HIDDEN_CLASSNAME);
     loginForm.addEventListener("submit", loginSubmit);
 } else {
-    paintGreeting(savedUserName);
+    blur.classList.remove("blur");
+    loginDiv.remove();
+    greeting.innerText = `Hello ${savedUserName}`;
 }

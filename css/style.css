@@ -1,54 +1,43 @@
-.hidden {
-  display: none;
+@import "components/clock.css";
+@import "components/login-form.css";
+@import "components/quote.css";
+@import "components/day.css";
+
+body {
+  font-family: "SamsungOne 400", "SamsungOne 700";
 }
-#clock-box {
-  margin-top: 1rem;
-  background: black;
-  border-radius: 1rem;
-  padding: 1rem;
+.main-screen {
+  padding: 0px var(--horizontal-space);
 }
-#clock {
-  position: relative;
-  width: 80px;
-  height: 80px;
-  border: 2px solid whitesmoke;
-  border-radius: 50%;
+main {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
 }
-#clock div {
-  position: absolute;
+body::-webkit-scrollbar {
+  background-color: white;
+  width: 13px;
+  height: 13px;
 }
-#watch-dot {
-  top: 50%;
-  left: 50%;
-  width: 6px;
-  height: 6px;
-  background-color: wheat;
-  border-radius: 50%;
-  z-index: 1;
-  transform: translate(-50%, -50%);
-}
-.hand {
-  transform-origin: 100%;
-  border-radius: 40px;
-}
-.hour-hand {
-  top: 38.5px;
-  left: 13px;
-  height: 3px;
-  width: 28px;
+body::-webkit-scrollbar-track {
   background-color: white;
 }
-.minute-hand {
-  top: 39px;
-  left: 9px;
-  height: 2px;
-  width: 32px;
-  background-color: #ffeaa7;
+body::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border: 4px solid white;
+  border-radius: 16px;
 }
-.second-hand {
-  top: 39.5px;
-  left: 7px;
-  height: 1.5px;
-  width: 34px;
-  background-color: #ffa533;
+#greeting {
+  font-size: 120%;
+}
+.component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  background: #333333;
+  color: white;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  padding: 20px;
 }

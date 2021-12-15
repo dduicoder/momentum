@@ -1,0 +1,13 @@
+#quote {
+  display: flex;
+  flex-direction: column;
+}
+#quote span:first-child {
+  font-family: "SamsungOne 700";
+  font-size: 110%;
+  margin-bottom: 5px;
+}
+#quote span:last-child {
+  font-size: 80%;
+  opacity: 0.6;
+}

@@ -4,8 +4,8 @@ const quotes = [
         author: "Oscar Wilde",
     },
     {
-        quote: "I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.",
-        author: "Marilyn Monroe",
+        quote: "If you know the enemy and know yourself you need not fear the results of a hundred battles.",
+        author: "Sun Tzu",
     },
     {
         quote: "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.",
@@ -40,3 +40,11 @@ const quotes = [
         author: "Mahatma Gandhi",
     },
 ];
+
+const quote = document.querySelector("#quote span:first-child");
+const author = document.querySelector("#quote span:last-child");
+
+const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
+
+quote.innerText = todaysQuote.quote;
+author.innerText = todaysQuote.author;

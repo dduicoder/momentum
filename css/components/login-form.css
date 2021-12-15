@@ -1,0 +1,86 @@
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    display: none;
+    box-shadow: none;
+    opacity: 0;
+  }
+}
+@keyframes blur {
+  from {
+    filter: blur(10px);
+  }
+  to {
+    filter: blur(0);
+  }
+}
+.border {
+  animation: border-off 1.5s ease-in-out forwards;
+}
+.disappear {
+  animation: disappear 1.5s ease-in-out forwards;
+}
+.hidden {
+  display: none;
+  box-shadow: none;
+  opacity: 0;
+}
+.blur {
+  filter: blur(10px);
+}
+.blur-off {
+  animation: blur 2s ease-in-out forwards;
+}
+#login-div {
+  position: absolute;
+  height: 98vh;
+  width: 98vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  filter: blur(0);
+  background-color: white;
+  z-index: 999;
+  height: 220px;
+  width: 300px;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15);
+  border-radius: 2rem;
+}
+#login-form span {
+  font-size: 120%;
+  margin-bottom: 1rem;
+}
+#login-form input {
+  font-family: "SamsungOne 400", "SamsungOne 700";
+  border-radius: 3rem;
+  border: none;
+  width: 220px;
+  height: 42px;
+  font-size: 86%;
+  transition: all 0.3s ease-in-out;
+}
+#login-form input:focus {
+  outline: none;
+}
+#login-form input:nth-child(2) {
+  text-align: center;
+  box-shadow: 0 0 10px #dfdfdf;
+  margin-bottom: 10px;
+}
+#login-form input:last-child {
+  color: white;
+  background-color: black;
+  box-shadow: 0 0 10px black;
+}
+#login-form input:hover {
+  transform: scale(1.05);
+  box-shadow: none;
+}
