@@ -1,0 +1,28 @@
+.todo {
+  flex-direction: column;
+  padding: 20px;
+}
+#todo-input {
+  font-family: "SamsungOne 400", "SamsungOne 700";
+  border: none;
+  border-bottom: 1px solid whitesmoke;
+  height: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 2rem;
+  font-size: 120%;
+  text-align: center;
+  color: white;
+  background-color: #333333;
+  transition: all 0.3s ease-in-out;
+}
+#todo-input:focus {
+  outline: none;
+  border-bottom: 1px solid gold;
+}
+.todo-cancel {
+  border: none;
+  background-color: #333333;
+  color: tomato;
+  font-size: 120%;
+}
