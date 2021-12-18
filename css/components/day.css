@@ -1,7 +1,8 @@
 .day {
   flex-direction: column;
-  font-size: 110%;
+  font-size: 120%;
+  background-color: #54adda;
 }
 .day span:last-child {
-  font-size: 160%;
+  font-size: 140%;
 }

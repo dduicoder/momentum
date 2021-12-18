@@ -9,23 +9,23 @@ function saveToDos() {
 }
 
 function deleteToDo(event) {
-  const li = event.target.parentElement;
-  li.remove();
-  toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
+  const div = event.target.parentElement;
+  div.remove();
+  toDos = toDos.filter((toDo) => toDo.id !== parseInt(div.id));
   saveToDos();
 }
 function paintToDo(newTodo) {
-  const li = document.createElement("li");
-  li.id = newTodo.id;
+  const div = document.createElement("div");
+  div.id = newTodo.id;
   const span = document.createElement("span");
-  span.innerText = newTodo.text;
+  span.innerText = `• ${newTodo.text}`;
   const button = document.createElement("button");
   button.innerText = "X";
   button.setAttribute("class", "todo-cancel");
   button.addEventListener("click", deleteToDo);
-  li.appendChild(span);
-  li.appendChild(button);
-  toDoList.appendChild(li);
+  div.appendChild(span);
+  div.appendChild(button);
+  toDoList.appendChild(div);
 }
 function handleToDoSubmit(event) {
   event.preventDefault();

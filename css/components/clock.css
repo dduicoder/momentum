@@ -1,12 +1,13 @@
 .watch {
   display: flex;
   flex-direction: column;
+  background-color: #95cfa3;
 }
 #clock {
   position: relative;
   width: 80px;
   height: 80px;
-  border: 2px solid whitesmoke;
+  border: 2px solid #e6e6e6;
   border-radius: 50%;
   margin-bottom: 1rem;
 }
@@ -29,21 +30,21 @@
 }
 .hour-hand {
   top: 38.75px;
-  left: 13px;
+  left: 12.25px;
   height: 3px;
   width: 28px;
-  background-color: white;
+  background-color: #e6e6e6;
 }
 .minute-hand {
   top: 39.225px;
-  left: 9px;
+  left: 8px;
   height: 2px;
   width: 32px;
   background-color: #ffeaa7;
 }
 .second-hand {
   top: 39.5px;
-  left: 6.5px;
+  left: 6.25px;
   height: 1.5px;
   width: 34px;
   background-color: #ffa533;

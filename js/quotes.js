@@ -20,12 +20,12 @@ const quotes = [
         author: "Marcus Tullius Cicero",
     },
     {
-        quote: "Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.",
-        author: "Bernard M. Baruch",
+        quote: "The way to get started is to quit talking and begin doing.",
+        author: "Walt Disney",
     },
     {
-        quote: "You've gotta dance like there's nobody watching, Love like you'll never be hurt, Sing like there's nobody listening, And live like it's heaven on earth.",
-        author: "William W. Purkey",
+        quote: "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+        author: "Nelson Mandela",
     },
     {
         quote: "You know you're in love when you can't fall asleep because reality is finally better than your dreams.",
@@ -34,6 +34,22 @@ const quotes = [
     {
         quote: "You only live once, but if you do it right, once is enough.",
         author: "Mae West",
+    },
+    {
+        quote: "Positive anything is better than negative nothing.",
+        author: "Elbert Hubbard",
+    },
+    {
+        quote: "Miracles happen to those who believe in them.",
+        author: "Bernhard Berenson",
+    },
+    {
+        quote: "Be positive. Be true. Be kind.",
+        author: "Roy T. Bennett",
+    },
+    {
+        quote: "You cannot have a positive life and a negative mind.",
+        author: "Joyce Meyer",
     },
     {
         quote: "Be the change that you wish to see in the world.",

@@ -1,3 +1,11 @@
 .weather {
   flex-direction: column;
+  background-color: #f87979;
+}
+.weather span:first-child {
+  font-size: 130%;
+  margin-bottom: 3px;
+}
+.weather span:last-child {
+  font-size: 85%;
 }

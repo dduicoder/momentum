@@ -1,6 +1,11 @@
+.quotes {
+  background-color: white;
+  color: black;
+}
 #quote {
   display: flex;
   flex-direction: column;
+  padding: 0 2rem;
 }
 #quote span:first-child {
   font-family: "SamsungOne 700";

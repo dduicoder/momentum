@@ -14,6 +14,7 @@ function loginSubmit(event) {
     blur.classList.remove("blur");
     blur.classList.add("blur-off");
     loginForm.classList.add("disappear");
+    setTimeout(function() { loginDiv.remove(); }, 1500);
 }
 
 const savedUserName = localStorage.getItem("username");

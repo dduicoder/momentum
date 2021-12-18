@@ -1,0 +1,49 @@
+body {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  width: 70vw;
+  height: 50vh;
+  display: grid;
+  grid-gap: 2rem;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-template-areas:
+    "one two three four"
+    "five six six four";
+}
+.component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.05);
+  transition: all 0.25s ease-in-out;
+}
+.component:hover {
+  transform: scale(1.03);
+  box-shadow: none;
+}
+.component:nth-child(1) {
+  grid-area: one;
+}
+.component:nth-child(2) {
+  grid-area: two;
+}
+.component:nth-child(3) {
+  grid-area: three;
+}
+.component:nth-child(4) {
+  grid-area: four;
+}
+.component:nth-child(5) {
+  grid-area: five;
+}
+.component:nth-child(6) {
+  grid-area: six;
+}
