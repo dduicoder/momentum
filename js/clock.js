@@ -20,16 +20,17 @@ function getTime() {
 
 function clockMovement() {
     const date = new Date();
+
     const seconds = date.getSeconds();
-    const secondsDeg = seconds * 6 + 90;
-    secHand.style.transform = `rotate(${secondsDeg}deg)`;
-  
     const minutes = date.getMinutes();
-    const minutesDeg = minutes * 6 + 0.1 * seconds + 90;
-    minHand.style.transform = `rotate(${minutesDeg}deg)`;
-  
     const hours = date.getHours();
+
+    const secondsDeg = seconds * 6 + 90;
+    const minutesDeg = minutes * 6 + 0.1 * seconds + 90;
     const hoursDeg = hours * 30 + 0.5 * minutes + 90;
+
+    secHand.style.transform = `rotate(${secondsDeg}deg)`;
+    minHand.style.transform = `rotate(${minutesDeg}deg)`;
     hourHand.style.transform = `rotate(${hoursDeg}deg)`;
 }
 
