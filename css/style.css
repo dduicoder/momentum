@@ -4,14 +4,12 @@
 @import "components/quote.css";
 @import "components/day.css";
 @import "components/greeting.css";
-@import "img/images.css";
 @import "components/todo.css";
 @import "components/weather.css";
+@import "img/images.css";
 
 * {
   font-family: "SamsungOne 400", "SamsungOne 700";
-}
-body {
   margin: 0;
 }
 body::-webkit-scrollbar {

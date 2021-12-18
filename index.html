@@ -16,40 +16,42 @@
             <input type="submit" value="Log In" />
         </form>
     </div>
-    <main class="blur">
-        <section class="component watch">
-            <div id="clock">
-                <div id="watch-dot"></div>
-                <div class="hand hour-hand"></div>
-                <div class="hand minute-hand"></div>
-                <div class="hand second-hand"></div>
-            </div>
-            <span id="electronic-watch"></span>
-        </section>
-        <section class="component day">
-            <span id="dayOfWeek"></span>
-            <span id="day"></span>
-        </section>
-        <section class="component greet">
-            <span id="greeting"></span>
-        </section>
-        <section class="component todo">
-            <div id="todo-list"></div>
-            <form autocomplete="off" id="todo-form">
-                <input id="todo-input" type="text" placeholder="Write a To Do here" required />
-            </form>
-        </section>
-        <section class="component weather">
-            <span></span>
-            <span></span>
-        </section>
-        <section class="component quotes">
-            <div id="quote">
+    <div class="background blur">
+        <main>
+            <section class="component watch">
+                <div id="clock">
+                    <div id="watch-dot"></div>
+                    <div class="hand hour-hand"></div>
+                    <div class="hand minute-hand"></div>
+                    <div class="hand second-hand"></div>
+                </div>
+                <span id="electronic-watch"></span>
+            </section>
+            <section class="component day">
+                <span id="dayOfWeek"></span>
+                <span id="day"></span>
+            </section>
+            <section class="component greet">
+                <span id="greeting"></span>
+            </section>
+            <section class="component todo">
+                <div id="todo-list"></div>
+                <form autocomplete="off" id="todo-form">
+                    <input id="todo-input" type="text" placeholder="Write a To Do here" required />
+                </form>
+            </section>
+            <section class="component weather">
                 <span></span>
                 <span></span>
-            </div>
-        </section>
-    </main>
+            </section>
+            <section class="component quotes">
+                <div id="quote">
+                    <span></span>
+                    <span></span>
+                </div>
+            </section>
+        </main>
+    </div>
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
