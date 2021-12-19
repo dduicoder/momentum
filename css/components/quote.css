@@ -8,7 +8,7 @@
   padding: 0 2rem;
 }
 #quote span:first-child {
-  font-family: "SamsungOne 700";
+  font-weight: 600;
   font-size: 110%;
   margin-bottom: 5px;
 }
