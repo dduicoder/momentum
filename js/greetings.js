@@ -1,5 +1,3 @@
-// https://hwajiin.github.io/todolist_localstorage/
-
 const loginDiv = document.querySelector("#login-div");
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input:nth-child(2)");
