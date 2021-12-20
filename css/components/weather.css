@@ -3,8 +3,8 @@
   background-color: #f87979;
 }
 .weather span:first-child {
-  font-size: 130%;
-  margin-bottom: 3px;
+  font-size: 120%;
+  margin-bottom: 2px;
 }
 .weather span:last-child {
   font-size: 95%;

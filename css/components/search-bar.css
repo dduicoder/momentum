@@ -17,5 +17,5 @@
   border-bottom: 1px solid white;
 }
 #search-bar input::placeholder {
-  color: rgba(256, 256, 256, 0.75);
+  color: rgba(256, 256, 256, 0.65);
 }
