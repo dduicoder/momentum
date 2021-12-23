@@ -3,9 +3,9 @@
   background-color: #f87979;
 }
 .weather span:first-child {
-  font-size: 120%;
+  font-size: 1.2rem;
   margin-bottom: 2px;
 }
 .weather span:last-child {
-  font-size: 95%;
+  font-size: 0.95rem;
 }

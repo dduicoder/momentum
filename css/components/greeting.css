@@ -1,17 +1,4 @@
 .greet {
-  font-size: 120%;
-  background-color: #ffc900;
-  /* animation: 8s ease-in-out infinite color-change; */
-}
-
-@keyframes color-change {
-  0% {
-    background-color: #ffd500;
-  }
-  50% {
-    background-color: #eb00ff;
-  }
-  100% {
-    background-color: #ffd500;
-  }
+  font-size: 1.2rem;
+  background: #ffc900;
 }

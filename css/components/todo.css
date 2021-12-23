@@ -1,6 +1,6 @@
 .todo {
   display: block;
-  padding: 18px;
+  padding: 20px;
   background-color: #333333;
   position: relative;
   overflow-y: hidden;
@@ -21,6 +21,7 @@
   background-color: #333333;
   color: tomato;
   font-size: 110%;
+  margin-right: 5px;
 }
 #todo-input {
   position: absolute;

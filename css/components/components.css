@@ -15,6 +15,12 @@ main {
     "one two three four"
     "five six six four";
 }
+@media (min-height: 800px) {
+  main {
+    grid-gap: 2.5rem;
+    height: 45vh;
+  }
+}
 .component {
   display: flex;
   justify-content: center;
@@ -22,7 +28,7 @@ main {
   color: white;
   border-radius: 1rem;
   padding: 1rem;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
   transition: all 0.25s ease-out;
 }
 .component:hover {

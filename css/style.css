@@ -8,10 +8,17 @@
 @import "components/todo.css";
 @import "components/weather.css";
 @import "img/images.css";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("//db.onlinewebfonts.com/c/05c77f210065b750f9ad9d606be229d2?family=SamsungOne");
+@font-face {
+  font-family: one;
+  src: url("samsungone.ttf");
+}
 
 * {
-  font-family: "SamsungOne 400", -apple-system;
+  font-family: one, -apple-system;
   margin: 0;
+  padding: 0;
 }
 .no-mobile {
   background-color: black;

@@ -5,14 +5,14 @@
 #quote {
   display: flex;
   flex-direction: column;
-  padding: 0 2rem;
+  padding: 0 2.5rem;
 }
 #quote span:first-child {
   font-weight: 600;
-  font-size: 110%;
+  font-size: 1.1rem;
   margin-bottom: 5px;
 }
 #quote span:last-child {
-  font-size: 80%;
+  font-size: 0.8rem;
   opacity: 0.6;
 }
