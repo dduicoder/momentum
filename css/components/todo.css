@@ -1,5 +1,6 @@
 .todo {
-  display: block;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 1rem;
   background-color: #333333;
   overflow-y: hidden;
@@ -7,7 +8,6 @@
 #todo-list {
   padding: 4px;
   width: 100%;
-  height: 87.5%;
   overflow-y: scroll;
 }
 #todo-list div {
@@ -23,12 +23,15 @@
   font-size: 1.1rem;
   margin-right: 5px;
 }
+#todo-form {
+  width: 100%;
+}
 #todo-input {
   border: none;
   border-bottom: 1px solid #333333;
   height: 40px;
   width: 100%;
-  font-size: 15px;
+  font-size: 0.9rem;
   text-align: center;
   color: white;
   background-color: #333333;

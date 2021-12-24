@@ -6,6 +6,7 @@ const secHand = document.querySelector(".second-hand");
 
 const dayOfWeek = document.querySelector("#dayOfWeek");
 const dayText = document.querySelector("#day");
+const week = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
 
 
 function getTime() {
@@ -35,13 +36,12 @@ function clockMovement() {
 }
 
 function days() {
-    const week = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
     const date = new Date();
     const day = date.getDate();
     const dayOfWeekIndex = date.getDay();
-    const dayOfWeekText = week[dayOfWeekIndex];
+
     dayText.innerText = day;
-    dayOfWeek.innerText = dayOfWeekText;
+    dayOfWeek.innerText = week[dayOfWeekIndex];
 }
 
 
@@ -51,5 +51,3 @@ days();
 setInterval(getTime, 1000);
 setInterval(clockMovement, 1000);
 setInterval(days, 86400000);
-
-
