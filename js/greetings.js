@@ -1,27 +1,25 @@
 const loginDiv = document.querySelector("#login-div");
 const loginForm = document.querySelector("#login-form");
-const loginInput = document.querySelector("#login-form input:nth-child(2)");
+const loginInput = document.querySelector("#login-input");
 const greeting = document.querySelector("#greeting");
 const greet = document.querySelector(".greet");
 const blur = document.querySelector(".blur");
 
 const colors = [
-    "#4bcffa",
-    "#50c1e6",
-    "#34e7e4",
-    "#00d8d6",
-    "#0be881",
+    "#ff1acd",
+    "#ff1acd",
+    "#ffc900",
+    "#ffc900",
     "#1fe98b",
-    "#40e99a",
-    "#ef5777",
+    "#33ee97",
     "#f53b57",
     "#f53b57",
-    "#eb5f74",
+    "#f53b57",
     "#e2354f",
     "#ff5e57"
   ];
+  
 const color1 = colors[Math.floor(Math.random() * colors.length)];
-console.log(color1);
 greet.style.background = `linear-gradient(45deg, ${color1}, #ffc900)`;
 
 function loginSubmit(event) {
@@ -35,7 +33,6 @@ function loginSubmit(event) {
     setTimeout(function() { loginDiv.remove(); }, 1500);
 }
 
-  
 const savedUserName = localStorage.getItem("username");
 
 if(savedUserName === null) {

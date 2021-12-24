@@ -17,11 +17,13 @@ function paintToDo(newTodo) {
   const div = document.createElement("div");
   const span = document.createElement("span");
   const button = document.createElement("button");
+
   div.id = newTodo.id;
   span.innerText = `• ${newTodo.text}`;
   button.innerText = "X";
   button.setAttribute("class", "todo-cancel");
   button.addEventListener("click", deleteToDo);
+  
   div.appendChild(span);
   div.appendChild(button);
   toDoList.appendChild(div);

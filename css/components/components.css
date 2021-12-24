@@ -21,6 +21,12 @@ main {
     height: 45vh;
   }
 }
+@media (min-width: 2000px) {
+  main {
+    grid-gap: 2.5rem;
+    width: 65vw;
+  }
+}
 .component {
   display: flex;
   justify-content: center;
