@@ -17,8 +17,8 @@
 #watch-dot {
   top: 50%;
   left: 50%;
-  width: 6px;
-  height: 6px;
+  width: 4px;
+  height: 4px;
   background-color: #74756f;
   border-radius: 50%;
   z-index: 1;
@@ -27,25 +27,23 @@
 .hand {
   transform-origin: 100%;
   border-radius: 40px;
+  height: 2px;
 }
 .hour-hand {
-  top: 38.5px;
-  left: 12.25px;
-  height: 3px;
+  top: 37px;
+  left: 10px;
   width: 28px;
   background-color: #8a8a8a;
 }
 .minute-hand {
-  top: 39px;
-  left: 9.25px;
-  height: 2px;
+  top: 37px;
+  left: 7px;
   width: 31px;
   background-color: #6f6f6f;
 }
 .second-hand {
-  top: 39.25px;
-  left: 6px;
-  height: 1.5px;
+  top: 37px;
+  left: 4px;
   width: 34px;
   background-color: #414141;
 }
