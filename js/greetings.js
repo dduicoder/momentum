@@ -8,8 +8,7 @@ const blur = document.querySelector(".blur");
 const colors = [
     "#ff1acd",
     "#ff1acd",
-    "#ffc900",
-    "#ffc900",
+    "#ff1acd",
     "#1fe98b",
     "#33ee97",
     "#f53b57",
