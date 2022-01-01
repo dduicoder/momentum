@@ -1,8 +1,11 @@
 .background {
   width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 main {
   width: 70vw;
@@ -18,17 +21,18 @@ main {
 @media (min-height: 800px) {
   main {
     grid-gap: 2.5rem;
-    height: 45vh;
+    height: 40vh;
   }
 }
 @media (min-width: 2000px) {
   main {
     grid-gap: 2.5rem;
-    width: 65vw;
+    width: 60vw;
   }
 }
 .component {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;

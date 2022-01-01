@@ -1,6 +1,4 @@
 .watch {
-  display: flex;
-  flex-direction: column;
   background-color: #cfcfcf;
 }
 #clock {

@@ -24,12 +24,16 @@ greet.style.background = `linear-gradient(45deg, ${color1}, #ffc900)`;
 function loginSubmit(event) {
     event.preventDefault();
     const username = loginInput.value;
+
     localStorage.setItem("username", username);
     greeting.innerText = `Hello ${username}`;
-    blur.classList.remove("blur");
+
     blur.classList.add("blur-off");
     loginForm.classList.add("disappear");
-    setTimeout(function() { loginDiv.remove(); }, 1500);
+    setTimeout(function() { 
+        loginDiv.remove(); 
+        blur.remove();
+    }, 1500);
 }
 
 const savedUserName = localStorage.getItem("username");
@@ -37,7 +41,7 @@ const savedUserName = localStorage.getItem("username");
 if(savedUserName === null) {
     loginForm.addEventListener("submit", loginSubmit);
 } else {
-    blur.classList.remove("blur");
     loginDiv.remove();
+    blur.remove();
     greeting.innerText = `Hello ${savedUserName}`;
 }

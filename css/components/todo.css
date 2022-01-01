@@ -1,5 +1,4 @@
 .todo {
-  flex-direction: column;
   justify-content: space-between;
   padding: 1rem;
   background-color: #333333;
@@ -44,11 +43,11 @@
 #todo-list::-webkit-scrollbar {
   background-color: #333333;
   width: 3px;
-  height: 3px;
 }
 #todo-list::-webkit-scrollbar-track {
   background-color: #333333;
 }
 #todo-list::-webkit-scrollbar-thumb {
   background-color: #bebebe;
+  border-radius: 3px;
 }

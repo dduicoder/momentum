@@ -1,5 +1,4 @@
 .weather {
-  flex-direction: column;
   background-color: #f87979;
 }
 .weather span:first-child {

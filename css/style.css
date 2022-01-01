@@ -7,7 +7,6 @@
 @import "components/greeting.css";
 @import "components/todo.css";
 @import "components/weather.css";
-@import "img/images.css";
 @font-face {
   font-family: one;
   src: url("samsungone.ttf");
@@ -20,6 +19,9 @@
 }
 .hidden {
   display: none;
+}
+body {
+  overflow: hidden;
 }
 body::-webkit-scrollbar {
   background-color: white;

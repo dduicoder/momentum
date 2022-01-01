@@ -44,7 +44,6 @@ function days() {
     dayOfWeek.innerText = week[dayOfWeekIndex];
 }
 
-
 getTime()
 clockMovement();
 days();
